@@ -18,7 +18,7 @@ class ApplicationController < Sinatra::Base
 end
 
 post '/songs' do
-  @recipe = Recipe.new
+  @recipe = Song.new
 
   # get data from params
   @recipe.title = params[:title]
