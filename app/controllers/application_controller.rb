@@ -8,7 +8,7 @@ erb :"songs/new"
   end
   
    get '/' do
-   redirect 
+   redirect to /
   end
   
 end
