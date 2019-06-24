@@ -18,6 +18,10 @@ class ApplicationController < Sinatra::Base
  @song = params[:song]["title"];
  @song = Song.all
   end
+  
+  get '/songs/new' do
+  erb :'songs/new'
+end
 
 
 end
