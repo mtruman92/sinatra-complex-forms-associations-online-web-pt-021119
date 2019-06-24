@@ -12,8 +12,7 @@ erb :"songs/new"
   end
   
  post "/songs" do
-require 'pry'; binding.pry
-
+erb: "/songs"
 end
 
 end
