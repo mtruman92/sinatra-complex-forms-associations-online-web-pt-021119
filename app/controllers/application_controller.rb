@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
   end
   
  post '/songs/songs' do
-  erb: '/songs/songs'
+  redirect to '/songs/songs'
  end
 
 
