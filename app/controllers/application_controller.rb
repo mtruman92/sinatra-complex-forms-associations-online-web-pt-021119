@@ -4,15 +4,15 @@ class ApplicationController < Sinatra::Base
   set :views, Proc.new { File.join(root, "../views/") }
   
     get '/songs/new' do
-erb :"songs/new"
-  end
+      erb :"songs/new"
+    end
   
-   get '/' do
+  get '/' do
    redirect to "/songs/new"
   end
   
- post "/songs" do
-erb: "/songs"
-end
+ post '/songs' do
+  erb: '/songs'
+ end
 
 end
