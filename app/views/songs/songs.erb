@@ -7,4 +7,9 @@ params
   :play_count
 }
 
- #{params[:name]}
+   
+post '/food' do
+  "My name is #{params[:name]}, and I love #{params[:favorite_food]}"
+end
+
+#{params[:name]}
