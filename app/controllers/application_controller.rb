@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
     "Hello World"
   end
   
- post '/songs' do
+ post '/songs/new' do
   redirect to 'songs/songs'
  end
 
