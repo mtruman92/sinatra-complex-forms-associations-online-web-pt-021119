@@ -27,7 +27,7 @@ post '/songs' do
   @songs.method = params[:method]
   @songs.save
   
-  redirect "/songs/songs"
+  redirect "/songs"
 end
 
 
