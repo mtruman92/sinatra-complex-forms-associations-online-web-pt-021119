@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
   erb :'songs/new'
 end
 
-post '/recipes' do
+post '/songs' do
   @recipe = Recipe.new
 
   # get data from params
@@ -32,6 +32,8 @@ post '/recipes' do
   @recipe.ingredients = params[:ingredients]
   @recipe.method = params[:method]
   @recipe.save
+  
+  redirect "/songs/songs"
 
 
 end
