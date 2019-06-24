@@ -7,4 +7,8 @@ class ApplicationController < Sinatra::Base
 erb :"songs/new"
   end
   
+   get '/' do
+    "Hello World"
+  end
+  
 end
