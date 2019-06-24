@@ -12,13 +12,7 @@ class ApplicationController < Sinatra::Base
   end
   
   
-  
- post '/songs' do
-  erb :"/songs/songs"
- @song = params[:song]["title"];
- @song = Song.all
-  end
-  
+
   get '/songs/new' do
   erb :'songs/new'
 end
