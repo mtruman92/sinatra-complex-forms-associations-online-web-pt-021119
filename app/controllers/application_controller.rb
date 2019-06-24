@@ -14,7 +14,7 @@ class ApplicationController < Sinatra::Base
   
   
  post '/songs' do
-  erb: "/songs/songs"
+  erb :"/songs/songs"
  end
 
 
