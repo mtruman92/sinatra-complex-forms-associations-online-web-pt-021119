@@ -18,7 +18,7 @@ class ApplicationController < Sinatra::Base
 end
 
 post '/songs' do
-  @songs = Song.new
+  @songs = Songs.new
 
   # get data from params
   @songs.title = params[:title]
