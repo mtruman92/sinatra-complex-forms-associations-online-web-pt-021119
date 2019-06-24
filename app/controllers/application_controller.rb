@@ -18,14 +18,14 @@ class ApplicationController < Sinatra::Base
 end
 
 post '/songs' do
-  @recipe = Song.new
+  @songs = Song.new
 
   # get data from params
-  @recipe.title = params[:title]
-  @recipe.descriptions = params[:descriptions]
-  @recipe.ingredients = params[:ingredients]
-  @recipe.method = params[:method]
-  @recipe.save
+  @songs.title = params[:title]
+  @songs.descriptions = params[:descriptions]
+  @songs.ingredients = params[:ingredients]
+  @songs.method = params[:method]
+  @songs.save
   
   redirect "/songs/songs"
 end
