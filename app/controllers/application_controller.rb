@@ -18,7 +18,7 @@ class ApplicationController < Sinatra::Base
  @song = params[:song]["title"];
  @song = params[:song]["length"];
  @song = params[:song]["play_count"]
- end
+  end
 
 
 end
