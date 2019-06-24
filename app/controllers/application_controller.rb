@@ -15,8 +15,8 @@ class ApplicationController < Sinatra::Base
   
  post '/songs' do
   erb :"/songs/songs"
-  @song = params[:song]["title"]
-  @song = params[:song]["length"]
+  Title: @song = params[:song]["title"]
+  Length: @song = params[:song]["length"]
  end
 
 
